@@ -1,14 +1,405 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello-World</title>
-  </head>
-  <body>
-    <h1>Alex Wang</h1>
-    <h1>Gallery</h1>
-    <h1>Blog</h1>
-    <h1></h1>
-    <p>I'm hosting with Github Pages.</p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Wang — Data, AI &amp; Software</title>
+  <meta name="description" content="Alex Wang is a technical data analyst working across data, automation and AI, building toward software engineering. Also a photographer of landscapes, travel and food.">
+  <meta name="theme-color" content="#0a0d16">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Wang — Data, AI & Software">
+  <meta property="og:description" content="I build with data. I see in frames.">
+  <meta property="og:image" content="https://alexny1992.github.io/assets/hero-mountains.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23000'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='-apple-system,Helvetica,Arial,sans-serif' font-size='28' font-weight='700' fill='%23f5f5f7'%3EAW%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/hero-mountains.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Wang",
+    "jobTitle": "Technical Data Analyst",
+    "description": "Data, automation and AI, growing into software engineering.",
+    "knowsAbout": ["Python", "SQL", "LLMs", "Embeddings", "Google Cloud Run", "Snowflake", "Data analytics"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#top" aria-label="Alex Wang, back to top">Alex Wang</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>Menu <span aria-hidden="true">+</span></button>
+      <nav id="primary-navigation" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#lens">Photography</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-media" data-hero-media>
+        <img data-photo="hero" src="assets/hero-mountains.jpg" alt="Blue mountain ridges rising above a sea of clouds" width="2400" height="1350" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-inner" data-hero-inner>
+        <p class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to data &amp; software engineering roles</p>
+        <p class="eyebrow hero-eyebrow">Alex Wang · Data, AI &amp; Software</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="line">I build with data.</span>
+          <span class="line grad">I see in frames.</span>
+        </h1>
+        <p class="hero-lede">
+          Technical data analyst working across automation, analytics and AI, now growing into software engineering.
+          Away from the keyboard, I photograph mountains, cities and the food I cook.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <!-- At a glance: supported capabilities, with outcomes explained below. -->
+        <ul class="hero-proof" aria-label="Highlights">
+          <li><strong>Applied AI</strong><span>routing, taxonomy &amp; embeddings</span></li>
+          <li><strong>Data to insight</strong><span>conversation &amp; journey analytics</span></li>
+          <li><strong>Cloud automation</strong><span>Python workflows, on a schedule</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ STATEMENT (scroll-lit text) ============ -->
+    <section class="statement" id="statement" aria-label="Introduction" data-statement>
+      <div class="statement-sticky">
+        <div class="statement-aurora" aria-hidden="true"></div>
+        <div class="statement-inner">
+          <p class="eyebrow eyebrow-dark statement-eyebrow">How I work</p>
+          <p class="statement-text" data-words>
+            Most of my work begins where data gets messy: thousands of chatbot conversations,
+            rate-limited APIs, numbers nobody trusts yet. I turn that into systems and answers
+            a team can act on.
+          </p>
+          <div class="statement-progress" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section section-light" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title" class="section-title">Problems I’ve untangled<br class="br-wide"> on the job.</h2>
+          <p class="section-sub">
+            Three projects from my role as a technical data analyst on conversational AI products.
+            Client names and data stay confidential.
+          </p>
+        </header>
+
+        <div class="cases">
+          <article class="case reveal">
+            <div class="case-head">
+              <span class="case-index">01</span>
+              <h3 class="case-title">Making the case for LLM routing</h3>
+              <div class="case-metric">
+                <span class="metric-value">68% <span class="arrow" aria-hidden="true">→</span> 85%</span>
+                <span class="metric-label">reported routing accuracy in a client comparison of intent-based and LLM routing</span>
+              </div>
+              <ol class="flow" aria-label="How it worked">
+                <li>Real customer conversations</li>
+                <li>Dialogflow intents vs. an LLM router</li>
+                <li>Accuracy compared side by side</li>
+                <li>A client-ready recommendation</li>
+              </ol>
+            </div>
+            <dl class="case-body">
+              <div><dt>The problem</dt><dd>Intent-based chatbot routing in Dialogflow kept sending customers to the wrong place, especially when one message asked for several things at once.</dd></div>
+              <div><dt>What I did</dt><dd>Compared intent matching with LLM-based routing on real conversations, then turned the results into a clear, client-ready analysis.</dd></div>
+              <div><dt>The outcome</dt><dd>The LLM routed noticeably more accurately, and several clients moved their solutions to LLM routing.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Tools">
+              <li>Dialogflow</li><li>LLMs</li><li>Conversation analytics</li>
+            </ul>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-head">
+              <span class="case-index">02</span>
+              <h3 class="case-title">Finding structure in thousands of conversations</h3>
+              <div class="case-metric">
+                <span class="metric-value">80–85%</span>
+                <span class="metric-label">estimated coverage of general intents, starting from about 150 sampled transcripts</span>
+              </div>
+              <ol class="flow" aria-label="How it worked">
+                <li>~150 sampled transcripts</li>
+                <li>An LLM drafts the intent taxonomy</li>
+                <li>Embeddings match every conversation</li>
+                <li>An intent map at full scale</li>
+              </ol>
+            </div>
+            <dl class="case-body">
+              <div><dt>The problem</dt><dd>Transcripts were too long to hand to an LLM whole. Details in the middle got lost, so summaries couldn’t be trusted.</dd></div>
+              <div><dt>What I did</dt><dd>Had an LLM draft an intent taxonomy from about 150 sampled transcripts, then used embedding models to match every remaining conversation against it.</dd></div>
+              <div><dt>The outcome</dt><dd>A map of what customers actually ask for, built at scale without asking an LLM to read every word.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>LLMs</li><li>Embeddings</li><li>Taxonomy design</li>
+            </ul>
+          </article>
+
+          <article class="case reveal">
+            <div class="case-head">
+              <span class="case-index">03</span>
+              <h3 class="case-title">A weekly pipeline that runs itself</h3>
+              <div class="case-metric">
+                <span class="metric-value">Every Monday</span>
+                <span class="metric-label">scheduled on Google Cloud, with no one pressing a button</span>
+              </div>
+              <ol class="flow" aria-label="How it worked">
+                <li>Cloud Scheduler fires on Monday</li>
+                <li>A Python job wakes on Cloud Run</li>
+                <li>Three chained SOQL lookups</li>
+                <li>Customer details, ready for the team</li>
+              </ol>
+            </div>
+            <dl class="case-body">
+              <div><dt>The problem</dt><dd>Client teams needed customer details pieced together from Salesforce on a recurring basis, which took several dependent lookups each time.</dd></div>
+              <div><dt>What I did</dt><dd>Wrote a Python job that chains three SOQL queries against a client-supplied list, deployed it on Cloud Run and scheduled it with Cloud Scheduler.</dd></div>
+              <div><dt>The outcome</dt><dd>A recurring request became a scheduled job. I investigated failures through Cloud Run logs, including timeouts caused by long-running queries.</dd></div>
+            </dl>
+            <ul class="tags" aria-label="Tools">
+              <li>Python</li><li>Salesforce API</li><li>Cloud Run</li><li>Cloud Scheduler</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="also reveal">
+          <p class="also-label">Also</p>
+          <ul class="also-list">
+            <li>
+              <h4>Journey analytics</h4>
+              <p>Heat maps and drop-off maps of how users move through chatbots, measured against a “problem solved” outcome, for quarterly business reviews.</p>
+            </li>
+            <li>
+              <h4>LLM evaluation</h4>
+              <p>Traced RAG retrievals and answers in Weights &amp; Biases, then tuned prompts and guardrails to keep responses in bounds.</p>
+            </li>
+            <li>
+              <h4>Teaching</h4>
+              <p>Ran part of a company-wide workshop on moving from relational to event-based data, explained through a farm-to-table analogy.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIDE PROJECTS ============ -->
+    <section class="section section-white" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">On my own time</p>
+          <h2 id="projects-title" class="section-title">Side projects, in code.</h2>
+          <p class="section-sub">Things I built to learn something new, from a multithreaded bot to a cloud data warehouse.</p>
+        </header>
+
+        <div class="projects">
+          <a class="project reveal" href="https://github.com/Alexny1992/Server-Latency-Discord-Bot" target="_blank" rel="noopener">
+            <span class="project-lang"><i style="--c:#3572A5"></i>Python</span>
+            <h3>Server Latency Bot</h3>
+            <p>A Discord bot that pings 40 game servers at once, stores the results in PostgreSQL and charts the last five minutes of latency on request.</p>
+            <ul class="tags tags-sm"><li>Threading</li><li>PostgreSQL</li><li>Discord API</li></ul>
+            <span class="project-link">View on GitHub <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="project reveal" href="https://github.com/Alexny1992/fetch_analytics_engineer" target="_blank" rel="noopener">
+            <span class="project-lang"><i style="--c:#e38c00"></i>SQL · Terraform</span>
+            <h3>Receipts Data Warehouse</h3>
+            <p>Modeled raw receipt JSON as a relational schema, provisioned S3 and IAM with Terraform, loaded the data into Snowflake and audited its quality.</p>
+            <ul class="tags tags-sm"><li>Snowflake</li><li>AWS S3</li><li>Data modeling</li></ul>
+            <span class="project-link">View on GitHub <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="project reveal" href="https://github.com/Alexny1992/JetBlue-Flight-Delay-Prediction" target="_blank" rel="noopener">
+            <span class="project-lang"><i style="--c:#DA5B0B"></i>Jupyter</span>
+            <h3>Flight Delay Forecasting</h3>
+            <p>Forecasts U.S. flight delays, using Spark to process the data and Prophet to model the time series, tuned with cross-validation.</p>
+            <ul class="tags tags-sm"><li>Spark</li><li>Prophet</li><li>Forecasting</li></ul>
+            <span class="project-link">View on GitHub <span aria-hidden="true">↗</span></span>
+          </a>
+
+          <a class="project reveal" href="https://github.com/Alexny1992/NBA_Analysis" target="_blank" rel="noopener">
+            <span class="project-lang"><i style="--c:#3572A5"></i>Python</span>
+            <h3>NBA Efficiency &amp; Wins</h3>
+            <p>A regression study of whether team efficiency (PER) predicts win ratio and playoff qualification, with the results in a Tableau dashboard.</p>
+            <ul class="tags tags-sm"><li>OLS regression</li><li>Tableau</li></ul>
+            <span class="project-link">View on GitHub <span aria-hidden="true">↗</span></span>
+          </a>
+        </div>
+
+        <div class="toolkit reveal" aria-labelledby="toolkit-title">
+          <h3 id="toolkit-title" class="toolkit-title">Toolkit</h3>
+          <dl class="toolkit-grid">
+            <div><dt>Languages</dt><dd>Python, SQL, JavaScript</dd></div>
+            <div><dt>Data</dt><dd>BigQuery, Snowflake, Spark, Looker Studio, Tableau</dd></div>
+            <div><dt>Cloud</dt><dd>Cloud Run, Cloud Scheduler, AWS S3 &amp; IAM, Terraform</dd></div>
+            <div><dt>AI</dt><dd>LLMs, embeddings, RAG, Dialogflow, Weights &amp; Biases</dd></div>
+          </dl>
+          <a class="text-link" data-profile="github" aria-disabled="true">GitHub profile · coming soon <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PHOTOGRAPHY ============ -->
+    <section class="section section-dark" id="lens" aria-labelledby="lens-title">
+      <div class="container">
+        <header class="section-head section-head-center reveal">
+          <p class="eyebrow eyebrow-dark">Photography</p>
+          <h2 id="lens-title" class="section-title">Off the clock,<br>I look through a lens.</h2>
+          <p class="section-sub">
+            Photography taught me what good analysis needs: patience, a clear subject,
+            and knowing what to leave out of the frame.
+          </p>
+        </header>
+
+        <div class="gallery">
+          <figure class="shot shot-a reveal">
+            <button type="button" data-lightbox aria-label="Open photo of mountain ridges at dusk">
+              <img data-photo="ridges" src="assets/dusk-ridges.jpg" alt="Layered mountain ridges fading from violet to amber at dusk" width="2400" height="1295" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Ridges at dusk</figcaption>
+          </figure>
+          <figure class="shot shot-b reveal">
+            <button type="button" data-lightbox aria-label="Open photo of Midtown Manhattan at dusk">
+              <img data-photo="city" src="assets/midtown-dusk.jpg" alt="The Empire State Building lit against a pink and violet sky over Midtown Manhattan" width="1202" height="1800" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Midtown, blue hour</figcaption>
+          </figure>
+          <figure class="shot shot-c reveal">
+            <button type="button" data-lightbox aria-label="Open photo of a train in the fog">
+              <img data-photo="train" src="assets/fog-train.jpg" alt="A red mountain train waiting at a forest station in heavy fog" width="1600" height="1068" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Into the fog</figcaption>
+          </figure>
+          <figure class="shot shot-d reveal">
+            <button type="button" data-lightbox aria-label="Open photo of mushroom risotto">
+              <img data-photo="food" src="assets/risotto.jpg" alt="Mushroom risotto with chives on a dark plate against a violet backdrop" width="1068" height="1600" loading="lazy" decoding="async">
+            </button>
+            <figcaption>From my kitchen</figcaption>
+          </figure>
+          <figure class="shot shot-e reveal">
+            <button type="button" data-lightbox aria-label="Open photo of a graphics card">
+              <img data-photo="workbench" src="assets/workbench.jpg" style="--focus: 50% 100%" alt="A graphics card inside a PC case, lit by teal fan lights" width="1600" height="1068" loading="lazy" decoding="async">
+            </button>
+            <figcaption>Where the models run</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section-light" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="portrait reveal">
+          <img data-photo="portrait" src="assets/portrait.jpg" alt="Alex Wang smiling in a navy T-shirt on a sunlit whitewashed street" width="1122" height="1402" loading="lazy" decoding="async">
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title" class="section-title">Hi, I’m Alex.</h2>
+          <p class="about-lede">
+            I’m happiest in the gap between a messy problem and something that works.
+          </p>
+          <p>
+            I’ve spent my career around conversational AI, pulling data out of APIs, finding out why chatbots
+            misbehave, and explaining what the numbers mean to the people who have to act on them. I’m
+            usually the one teammates bring technical questions to, and I like it that way.
+          </p>
+          <p>
+            I’m outgoing, I ask the obvious question early, and I follow through. Next, I’m taking that into
+            software engineering: building useful software with the same curiosity and care I bring to analysis.
+          </p>
+
+          <ul class="offclock">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11h16M5 11a7 7 0 0 0 14 0M9 4c0 1.5 1 1.5 1 3M13 4c0 1.5 1 1.5 1 3"/></svg>
+              <div><h3>Cook</h3><p>I cook, then photograph it, usually in that order.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/></svg>
+              <div><h3>Train</h3><p>I work out consistently. It keeps me sharp and patient with slow progress.</p></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19 9.5 8l4 6 2.5-3.5L21 19z"/><circle cx="17" cy="6" r="1.6"/></svg>
+              <div><h3>Explore</h3><p>I travel for the landscapes and come home with too many photos.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="contact-inner reveal">
+        <p class="eyebrow eyebrow-dark">Contact</p>
+        <h2 id="contact-title" class="contact-title">Let’s build<br><span class="grad">something good.</span></h2>
+        <p class="contact-sub">
+          Open to data, analytics engineering and software engineering roles, and always happy to talk shop.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-light btn-lg" aria-disabled="true" data-email>Email coming soon</a>
+          <button class="btn btn-ghost btn-lg" type="button" data-copy disabled>
+            <span data-copy-label>Copy address</span>
+          </button>
+        </div>
+        <p class="contact-note" data-contact-note>Contact details are coming soon.</p>
+        <ul class="contact-links">
+          <li><a data-profile="github" aria-disabled="true">GitHub · soon</a></li>
+          <li><a data-profile="linkedin" aria-disabled="true">LinkedIn · soon</a></li>
+          <li><a data-profile="resume" aria-disabled="true">Résumé · soon</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Alex Wang</p>
+      <p>Built with HTML, CSS and a little JavaScript.</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" data-lightbox-dialog aria-label="Photo viewer">
+    <button class="lightbox-close" type="button" aria-label="Close" data-lightbox-close>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="lightbox-step lightbox-prev" type="button" aria-label="Previous photo" data-lightbox-prev>←</button>
+    <figure class="lightbox-figure">
+      <img alt="">
+      <figcaption data-lightbox-caption aria-live="polite"></figcaption>
+    </figure>
+    <button class="lightbox-step lightbox-next" type="button" aria-label="Next photo" data-lightbox-next>→</button>
+  </dialog>
+
+  <script src="js/content.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
